@@ -3,6 +3,7 @@ run-name: ${{ github.actor }} is testing CI/CD on github
 on: [push]
 jobs:
   build_a:
+    environment: prod
     name: Build a
     runs-on: ubuntu-latest
     steps:
