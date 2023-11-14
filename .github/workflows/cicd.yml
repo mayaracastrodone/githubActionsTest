@@ -2,11 +2,6 @@ name: ci-cd
 run-name: ${{ github.actor }} is testing CI/CD on github
 on: [push]
 jobs:
-  .build_t: &build
-    runs-on: ubuntu-latest
-    steps:
-      - run: echo "Run build"
-
   build_a:
     environment: prod
     name: Build a
