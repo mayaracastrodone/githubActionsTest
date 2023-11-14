@@ -7,8 +7,10 @@ jobs:
     env:
       TEST: ${{ vars.TEST }}
     steps:
+    - name: Use variables
       run: |
         echo "$TEST"
+
   check-bats-version:
     needs: job1
     runs-on: ubuntu-latest
